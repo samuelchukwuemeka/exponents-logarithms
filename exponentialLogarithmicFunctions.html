@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128236011-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128236011-1');
+    </script>
+
+    <!--
+        <script data-ad-client="ca-pub-9463984700780669" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        -->
+
+    <meta name="google-site-verification" content="1yHIX_e0msIoLM7X37SmQV0CzSmDRvgYASeT-gAQJe4">
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <title>Exponential and Logarithmic Functions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in exponential and logarithmic functions and graphs.">
+
+    <meta name="keywords" content="samuel, dominic, chukwuemeka, samuel dominic chukwuemeka, 
+              math, mathematics, arithmetic, algebra, exponents, logarithms, base, power, index, 
+              indices, exponential equations, logarithmic equations, laws of exponents, laws of logarithms, inverses, 
+              inverse functions, exponential functions, logarithmic functions, exponential expressions, 
+              logarithmic expressions, exponential models, logarithmic models, mathematics of finance, 
+              financial models, exponential growth, exponential decay, growth constant, decay constant, half-life, 
+              doubling time, expand and condense logarithms">
+
+    <link href="styles/exponentsLogarithms.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header/Home -->
+    <header class="w3-padding-64 cornsilk" id="quotes">
+        <!--
+            <div class="w3-center">
+                <button onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+            </div>
+            
+            <div class="quotations w3-content" id="solutionQuotes">
+                <p>
+                    <q>
+                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                        It is the <b>most powerful prayer</b>.
+                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                    </q> - Samuel Dominic Chukwuemeka 
+                </p>
+                <p id="messages10"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students</b>.</q> - Samuel Chukwuemeka</p>
+            </div>
+        -->
+    </header>
+
+    <!-- Page Content -->
+    <div class="w3-row w3-container">
+        <h1>Exponential Functions and Logarithmic Functions</h1>
+
+        <p class="w3-container">
+
+            <!-- Image in top left corner
+                <a href="https://exponents-logarithms.appspot.com">
+                    <img src="images/samuel-chukwuemeka.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images" title="Samuel Dominic Chukwuemeka aka SamDom For Peace">
+                </a>
+
+                <b>Calculators:</b> <a href="https://exponents-logarithms.appspot.com/calculators.html" target="_blank">Exponents and Logarithms Calculators</a> <br><br>
+            -->
+
+            <mark>For ACT Students</mark> <br>
+            The ACT is a timed exam...60 questions for 60 minutes <br>
+            This implies that you have to solve each question in one minute. <br>
+            Some questions will typically take less than a minute a solve. <br>
+            Some questions will typically take more than a minute to solve. <br>
+            The goal is to maximize your time. You use the time saved on those questions you
+            solved in less than a minute, to solve the questions that will take more than a minute. <br>
+            So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+            So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+            Please ensure you attempt <u>all ACT questions</u>. <br>
+            There is no <i>negative</i> penalty for a wrong answer. <br><br>
+            <mark>For JAMB Students</mark> <br>
+            Calculators are not allowed. So, the questions are solved in a way that does not require a calculator.
+            <br><br>
+            <mark>For WASSCE Students</mark> <br>
+            Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+            Any question labeled WASSCE:FM is a question for the WASSCE Further Mathematics/Elective Mathematics
+            <br><br>
+            <mark>For GCSE Students</mark> <br>
+            All work is shown to satisfy (and actually exceed) the minimum for awarding method marks. <br>
+            Calculators are allowed for some questions. Calculators are not allowed for some questions. <br><br>
+            <mark>For NSC Students</mark> <br>
+            <u>For the Questions:</u> <br>
+            Any space included in a number indicates a comma used to separate digits...separating multiples of three
+            digits from behind. <br>
+            Any comma included in a number indicates a decimal point. <br>
+            <u>For the Solutions:</u> <br>
+            Decimals are used appropriately rather than commas <br>
+            Commas are used to separate digits appropriately. <br><br>
+
+            Solve each question. <br>
+            Show all work.
+        </p>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) <b>NYSED</b> Perry invested in property that cost him <span>$1500</span> <br>
+                Five years later, it was worth <span>$3000</span>, and 10 years from his original purchase, it was worth
+                <span>$6000</span>. <br>
+                Assuming the growth rate remains the same, which type of function could he create to find the value of
+                his investment 30 years
+                from his original purchase? <br>
+                (1) exponential function &emsp;&emsp;&emsp; (3) quadratic function <br>
+                (2) linear function &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; (4) trigonometric function
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionEFLFFLF1')">Show/Hide Answer</button>
+                <div class="result" id="solutionEFLFFLF1">
+                    <br>
+                    First: Let us represent this information in a table. <br>
+                    <table class="w3-center">
+                        <tr>
+                            <th style="width: 50%;">$x$, Year (what year?)</th>
+                            <th style="width: 50%;">$y$, cost (<span>$</span>)</th>
+                        </tr>
+                        <tr>
+                            <td>$1$ <br> (Year 1)</td>
+                            <td>$1500$</td>
+                        </tr>
+                        <tr>
+                            <td>$6$ <br> (5 years later = 5 + 1 = Year 6)</td>
+                            <td>$3000$</td>
+                        </tr>
+                        <tr>
+                            <td>$11$ <br> (10 years from year 1 = 10 + 1 = Year 11)</td>
+                            <td>$6000$</td>
+                        </tr>
+                        <tr>
+                            <td>$31$ <br> (30 years from year 1 = 30 + 1 = Year 31)</td>
+                            <td>$?$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="w3-padding">
+                                $
+                                Try\;\;Exponential\;\;Function \\[3ex]
+                                \underline{Ratio\;\;between\;\;consecutive\;\;terms} \\[3ex]
+                                \dfrac{2nd}{1st} = \dfrac{3000}{1500} = 2 \\[5ex]
+                                \dfrac{3rd}{2nd} = \dfrac{6000}{3000} = 2 \\[5ex]
+                                common\;\;ratio = e^{-5} \\[3ex]
+                                \implies Exponential\;\;Function \\[3ex]
+                                $
+                                This is the correct answer. <br>
+                                We can stop here. <br>
+                                But, let's try other options. <br><br>
+
+                                $
+                                Try\;\;\;Linear\;\;Function \\[3ex]
+                                \underline{First\;\;Difference\;\;between\;\;consecutive\;\;terms} \\[3ex]
+                                2nd - 1st = 3000 - 1500 = 1500 \\[3ex]
+                                3rd - 2nd = 6000 - 3000 = 3000 \\[3ex]
+                                No\;\;common\;\;first\;\;difference \\[3ex]
+                                Not\;\;a\;\;Linear\;\;Function \\[5ex]
+
+                                Try\;\;\;Quadratic\;\;Function \\[3ex]
+                                \underline{First\;\;Difference\;\;between\;\;consecutive\;\;terms} \\[3ex]
+                                2nd - 1st = 3000 - 1500 = 1500 \\[3ex]
+                                3rd - 2nd = 6000 - 3000 = 3000 \\[3ex]
+                                Not\;\;enough\;\;data \\[5ex]
+                                But:\;\;assume\;\;the\;\;sequence:4th\;\;term = 12000 \\[3ex]
+                                4th - 3rd = 12000 - 6000 = 6000 \\[3ex]
+                                new\;\;terms = 1500, 3000, 6000 \\[5ex]
+                                \underline{Second\;\;Difference\;\;between\;\;consecutive\;\;terms} \\[3ex]
+                                2nd - 1st = 3000 - 1500 = 1500 \\[3ex]
+                                3rd - 2nd = 6000 - 3000 = 3000 \\[3ex]
+                                No\;\;common\;\;second\;\;difference \\[3ex]
+                                Not\;\;a\;\;Quadratic\;\;Function \\[5ex]
+
+                                Try\;\;\;Trigonometric\;\;Function \\[3ex]
+                                Not\;\;a\;\;Trigonometric\;\;Function
+                                $
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) Identify whether the statement represents an exponential function. <br>
+                For each training session, a personal trainer charges his clients $\$5$ less than the previous training
+                session.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionEFLF2')">Show/Hide Answer</button>
+                <div class="result" id="solutionEFLF2">
+                    <br>
+                    Let us represent this information in a table. <br>
+                    Let the fee for the first training session be $p$ <br>
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green" style="width: 50%">Training Session</th>
+                            <th class="green" style="width: 50%">Fee ($\$$)</th>
+                        </tr>
+                        <tr>
+                            <td>$1$</td>
+                            <td>$p$</td>
+                        </tr>
+                        <tr>
+                            <td>$2$</td>
+                            <td>$p - 5$</td>
+                        </tr>
+                        <tr>
+                            <td>$3$</td>
+                            <td>
+                                $(p - 5) - 5$ <br>
+                                $p - 5 - 5$ <br>
+                                $p - 10$ <br>
+                                $p - 2(5)$
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>$4$</td>
+                            <td>
+                                $(p - 10) - 5$ <br>
+                                $p - 10 - 5$ <br>
+                                $p - 15$ <br>
+                                $p - 3(5)$ <br>
+                                $p - (4 - 1)(5)$
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>$x$</td>
+                            <td>
+                                $p - (x - 1)(5)$ <br>
+                                $p - 5(x - 1)$ <br>
+                                $p - 5x + 5$
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                This is a linear function <br>
+                                It is not an exponential function.
+                            </td>
+                        </tr>
+                    </table> <br>
+                    An exponential function has: <br>
+                    (1.) a base that is a constant <br>
+                    (2.) an exponent that is the independent variable. <br>
+                    Examples: $y = 3^x$, $y = e^x$ among others.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) All the graphs shown below have the form: $f(x) = ab^x$ <br>
+                <div class="w3-center">
+                    <img src="images/Questions/ExponentialLogarithmicFunctions/Number3.png" alt="Number 3">
+                </div>
+                <br>
+                (a.) Which graph has the smallest value of $a$? <br>
+                (b.) Which graph has the largest value of $a$? <br>
+                (c.) Which graph has the smallest value of $b$? <br>
+                (d.) Which graph has the largest value of $b$? <br><br>
+                <button class="solutions" onclick="solutions('solutionEFLF3')">Show/Hide Answer</button>
+                <div class="result" id="solutionEFLF3">
+                    <br>
+                    (a.) <br>
+                    The graph with the smallest value of $a$ is the graph with the least $y-intercept$ <br>
+                    This implies that when $x = 0$, the graph that has the least value of $y$ (the least value of $y$ on
+                    the $y-axis$)
+                    is the graph with the smallest value of $a$ <br>
+                    That graph is Graph F <br><br>
+
+                    (b.) <br>
+                    The graph with the largest value of $a$ is the graph with the greatest $y-intercept$ <br>
+                    This implies that when $x = 0$, the graph that has the greatest value of $y$ (the greatest value of
+                    $y$ on the $y-axis$)
+                    is the graph with the largest value of $a$ <br>
+                    That graph is Graph C <br><br>
+
+                    (c.) <br>
+                    The graph with the samllest value of $b$ is the graph that: <br><br>
+                    (1.) decreases from left to right. <br>
+                    It is a decreasing function which signifies an exponential decay. <br>
+                    <b>and</b> <br>
+                    (2.) has the steepest slope. <br><br>
+                    The first condition eliminates Graphs D, E, F because those graphs are increasing from left to right
+                    and their bases are
+                    greater than 1 <br><br>
+                    We are left with Graphs A, B, C <br>
+                    These graphs are decreasing from left to right. Their bases are between 0 and 1 <br>
+                    Looking at these graphs, the one with the steepest slope is Graph C <br>
+                    Therefore, Graph C has the smallest value for the base, $b$ <br><br>
+                    Let us verify with some graph examples: <br>
+                    <div class="w3-center">
+                        <img src="images/Answers/ExponentialLogarithmicFunctions/Number3-1.png" alt="Number 3-1">
+                    </div> <br><br>
+
+                    (d.) <br>
+                    The graph with the largest value of $b$ is the graph that: <br><br>
+                    (1.) increases from left to right. <br>
+                    It is an increasing function which signifies an exponential growth. <br>
+                    <b>and</b> <br>
+                    (2.) has the steepest slope. <br><br>
+                    The first condition eliminates Graphs A, B, C because those graphs are decreasing from left to right
+                    and their bases are
+                    between 0 than 1 <br><br>
+                    We are left with Graphs D, E, F <br>
+                    These graphs are increasing from left to right. Their bases are greater than 1 <br>
+                    Looking at these graphs, the one with the steepest slope is Graph D <br>
+                    Therefore, Graph D has the largest value for the base, $b$ <br><br>
+                    Let us verify with some graph examples: <br>
+                    <div class="w3-center">
+                        <img src="images/Answers/ExponentialLogarithmicFunctions/Number3-2.png" alt="Number 3-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) <b>GCSE</b> Leo wants to draw the graph of $y = 2^x$ for values of <i>x</i> from 0 to 4 <br>
+                Here is his graph. <br><br>
+                <div class="w3-center">
+                    <img src="images/Questions/ExponentialLogarithmicFunctions/Number4.png" alt="Number 4">
+                </div>
+                Make one criticism of his graph.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionEFLF4')">Show/Hide Answer</button>
+                <div class="result" id="solutionEFLF4">
+                    <br>
+                    $
+                    When\;\;x = 4,\;\;y = 2^4 = 16 \\[3ex]
+                    $
+                    However, Leo did not label the y-value correctly for an x-value of 4
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) Select the correct graph of the pair of functions on the same axis. <br><br>
+                $
+                f(x) = e^x \;\;\;and\;\;\; g(x) = \ln x \\[3ex]
+                $
+                The function $f(x)$ is the solid blue curve and $g(x)$ is the dashed red curve. <br>
+                <div class="w3-center">
+                    <img src="images/Questions/ExponentialLogarithmicFunctions/Number5-1.png" alt="Number 5-1"> <br>
+                    <img src="images/Questions/ExponentialLogarithmicFunctions/Number5-2.png" alt="Number 5-2">
+                </div>
+                <br>
+                <button class="solutions" onclick="solutions('solutionEFLF5')">Show/Hide Answer</button>
+                <div class="result" id="solutionEFLF5">
+                    <br>
+                    <u>First:</u> <br>
+                    $f(x)$ and $g(x)$ are inverses of each other. <br>
+                    This implies that the domain of $f(x)$ is the range of $g(x)$ <br>
+                    <b>and</b> <br>
+                    the range of $f(x)$ is the domain of $g(x)$ <br><br>
+                    $
+                    f(x) \\[3ex]
+                    Domain:\;\; (-\infty, \infty) \\[3ex]
+                    Range:\;\; (0, \infty) \\[5ex]
+                    $
+                    This eliminates Graphs A and B because the domain for Graphs A and B is $(0, \infty)$ <br><br>
+                    $
+                    g(x) \\[3ex]
+                    Domain:\;\; (0, \infty) \\[3ex]
+                    Range:\;\; (-\infty, \infty) \\[5ex]
+                    $
+                    We are left with Graphs C and D <br><br>
+                    <u>Second:</u> <br>
+                    Any point say $(c, d)$ on the graph of $f(x)$ is the point $(d, c)$ on the graph of $g(x)$ <br>
+                    This is because $g(x)$ is the inverse of $f(x)$ <br>
+                    Any graph that does not have the point $(c, d)$ on the graph of $f(x)$ and the point $(d, c)$ on the
+                    graph of $g(x)$
+                    is not the correct graph. <br><br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <td colspan="2" style="width: 50%">$f(x) = e^x$</td>
+                            <td colspan="2" style="width: 50%">$g(x) = \ln x$</td>
+                        </tr>
+                        <tr>
+                            <td>$x$</td>
+                            <td>$y$</td>
+                            <td>$x$</td>
+                            <td>$y$</td>
+                        </tr>
+                        <tr>
+                            <td>$0$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                            <td>$0$</td>
+                        </tr>
+                    </table> <br>
+                    The $y-intercept$ of $f(x)$ is the $x-intercept$ of $g(x)$ <br>
+                    Both Graphs C and D satisfy this. <br>
+                    Let us try another point. <br><br>
+                    <table class="w3-center">
+                        <tr>
+                            <td colspan="2" style="width: 50%">$f(x) = e^x$</td>
+                            <td colspan="2" style="width: 50%">$g(x) = \ln x$</td>
+                        </tr>
+                        <tr>
+                            <td>$x$</td>
+                            <td>$y$</td>
+                            <td>$x$</td>
+                            <td>$y$</td>
+                        </tr>
+                        <tr>
+                            <td>$1$</td>
+                            <td>$e$ ($\approx 2.718$)</td>
+                            <td>$e$ ($\approx 2.718$)</td>
+                            <td>$1$</td>
+                        </tr>
+                    </table> <br>
+                    Looking at both graphs, Graph C is the only graph to satisfy these points for $f(x)$ and $g(x)$ <br>
+                    For Graph D, for $g(x)$; when $x = 2.718$, $y \lt 1$ <br>
+                    Therefore, Graph C is the correct option.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionEFLF6')">Show/Hide Answer</button>
+                <div class="result" id="solutionEFLF6">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) Answer the questions. <br>
+                (a.) If the graph of a logarithmic function $f(x) = \log_a x$; <i>a</i> &gt; 0; <i>a</i> &ne; 1 is
+                increasing,
+                then its base must be greater than..............
+                <br><br>
+                (b.) If the graph of a logarithmic function $f(x) = \log_a x$; <i>a</i> &gt; 0; <i>a</i> &ne; 1 is
+                decreasing,
+                then its base must be less than..............
+
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionEFLF7')">Show/Hide Answer</button>
+                <div class="result" id="solutionEFLF7">
+                    <br>
+                    (a.) If the graph of a logarithmic function $f(x) = \log_a x$; <i>a</i> &gt; 0; <i>a</i> &ne; 1 is
+                    increasing,
+                    then its base must be larger than 1. <br>
+                    Let us review these examples: <br>
+                    <img src="images/LogarithmicFunctions/case-1.png" alt="Case 1" style="width: 100%;">
+                    <br><br>
+                    (b.) If the graph of a logarithmic function $f(x) = \log_a x$; <i>a</i> &gt; 0; <i>a</i> &ne; 1 is
+                    increasing,
+                    then its base must be less than 1. <br>
+                    Let us review these examples: <br>
+                    <img src="images/LogarithmicFunctions/case-2.png" alt="Case 2" style="width: 100%;">
+                    <br><br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionEFLF8')">Show/Hide Answer</button>
+                <div class="result" id="solutionEFLF8">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) A population, <i>P<sub>0</sub></i> doubles every 5 years. <br>
+                (a.) Find the tripling time of this population. <br>
+                (b.) Find the percent increase of the population after two tripling periods.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionEFLF9')">Show/Hide Answer</button>
+                <div class="result" id="solutionEFLF9">
+                    <br>
+                    Let: <br>
+                    <i>t</i> = time <br>
+                    <i>P<sub>0</sub></i> = initial population at <i>t</i> = 0 <br>
+                    <i>P</i> = population at a specific time <br>
+                    <i>b</i> = base (growth factor)
+                    <br><br>
+                    $
+                    P(t) = P_0 * b^t...\text{exponential growth function} \\[3ex]
+                    \text{At } t = 5: \\[3ex]
+                    P(5) = P_0 * b^5 \\[3ex]
+                    Also,\;\; P(5) = 2 * P_0 ...\text{initial population doubles every 5 years} \\[3ex]
+                    P(5) = P(5) \implies \\[3ex]
+                    P_0 * b^5 = 2 * P_0 \\[3ex]
+                    b^5 = 2 \\[3ex]
+                    \text{Take the fifth root of both sides} \\[3ex]
+                    b = \sqrt[5]{2} \\[3ex]
+                    \text{Hence, the exponential function is:} \\[3ex]
+                    P(t) = P_0 * (\sqrt[5]{2})^t \\[3ex]
+                    $
+                    The tripling time of the population is the time it takes the population to triple
+                    (to be three times the initial population)
+                    <br><br>
+                    $
+                    (a.) \\[3ex]
+                    P(t) = 3P_0 ...\text{population is triple the initial population} \\[3ex]
+                    \implies \\[3ex]
+                    3P_0 = P_0 * (\sqrt[5]{2})^t \\[3ex]
+                    3 = (\sqrt[5]{2})^t \\[3ex]
+                    \text{Introduce logarithm to both sides} \\[3ex]
+                    \log 3 = \log (\sqrt[5]{2})^t \\[3ex]
+                    \log 3 = t \log \sqrt[5]{2} \\[3ex]
+                    t = \dfrac{\log 3}{\log \sqrt[5]{2}} \\[5ex]
+                    t = 7.924812504\;years \\[3ex]
+                    $
+                    The tripling time of this population is 7.924812504 years. <br>
+                    A tripling period is the time taken for the population to be three times the initial population.
+                    <br>
+                    Two tripling periods is the time taken for the population to be nine times (3² = 9) the initial
+                    population.
+                    <br><br>
+                    $
+                    (b.) \\[3ex]
+                    \text{Initial Population} = P_0 = Initial \\[3ex]
+                    \text{Population after 2 trimpling periods} = 9 * P_0 = New \\[3ex]
+                    \%\;increase = \dfrac{New - Initial}{Initial} * 100 \\[5ex]
+                    = \dfrac{9P_0 - P_0}{P_0} * 100 \\[5ex]
+                    = \dfrac{8P_0}{P_0} * 100 \\[5ex]
+                    = 800\% \\[3ex]
+                    $
+                    The percent increase of the population after two tripling periods is 800%.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionEFLF10')">Show/Hide Answer</button>
+                <div class="result" id="solutionEFLF10">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.) For the function $f(x) = 4(2)^x - 6$, <br>
+                (a.) Write the domain. <br>
+                (b.) Write the range. <br>
+                (c.) Determine the asymptotes. <br>
+                (d.) Graph the function. Indicate the asymptote on the graph. <br>
+                Which is the graph of $f(x) = 4(2)^x - 6$ (and its asymptote)? <br>
+                <div class="w3-center">
+                    <img src="images/Questions/ExponentialLogarithmicFunctions/Number11-1.png" alt="Number 11-1"> <br>
+                    <img src="images/Questions/ExponentialLogarithmicFunctions/Number11-2.png" alt="Number 11-2"> <br>
+                    <img src="images/Questions/ExponentialLogarithmicFunctions/Number11-3.png" alt="Number 11-3"> <br>
+                    <img src="images/Questions/ExponentialLogarithmicFunctions/Number11-4.png" alt="Number 11-4">
+                </div> <br>
+                <button class="solutions" onclick="solutions('solutionEFLF11')">Show/Hide Answer</button>
+                <div class="result" id="solutionEFLF11">
+                    <br>
+                    An exponential function is defined for all the real values of the independent variable <br>
+                    Therefore, all the real values of $x$ are defined in the domain. <br><br>
+                    Because all the real values of $x$ are in the domain of an exponential function, an exponential
+                    function does not have a
+                    vertical asymptote. <br><br>
+                    $
+                    f(x) = 4(2)^x - 6 \\[3ex]
+                    (a.) \\[3ex]
+                    \underline{Domain} \\[3ex]
+                    D = \{x: x \in \mathbb{R}\} \\[3ex]
+                    D = (-\infty, \infty) \\[3ex]
+                    (b.) \\[3ex]
+                    f(x) = 4(2)^x - 6 \\[3ex]
+                    f(x) = 4 * 2^x - 6 \\[3ex]
+                    \underline{Positive\;\;Domain} \\[3ex]
+                    As \;\;x \rightarrow \infty, \;\; 2^x \rightarrow \infty \\[3ex]
+                    \underline{Negative\;\;Domian} \\[3ex]
+                    However:\;\; As \;\;x \rightarrow -\infty, \;\; 2^x \rightarrow 0 \\[3ex]
+                    How? \\[3ex]
+                    Some\;\;examples: \\[3ex]
+                    2^{-5} = \dfrac{1}{2^5} = \dfrac{1}{32} = 0.03125 \\[5ex]
+                    2^{-20} = \dfrac{1}{2^{20}} = \dfrac{1}{1048576} = 0.0000009536743164 \\[5ex]
+                    Would\;\;you\;\;like\;\;to\;\;try\;\; 2^{-150}? \\[3ex]
+                    approaches\;\;zero\;\;though\;\;still\;\;greater\;\;than\;\;zero \\[3ex]
+                    \implies \\[3ex]
+                    f(x) \;\;greater\;\;than\;\; 4 * 0 - 6 \\[3ex]
+                    f(x) \;\;greater\;\;than\;\; 0 - 6 \\[3ex]
+                    f(x) \;\;greater\;\;than\;\; -6 \\[3ex]
+                    \underline{Range} \\[3ex]
+                    R = \{y: y \gt -6\} \\[3ex]
+                    R = (-6, \infty) \\[3ex]
+                    (c.) \\[3ex]
+                    No\;\;vertical\;\;asymptote \\[3ex]
+                    \underline{Horizontal\;\;Asymptote} \\[3ex]
+                    f(x) = 4 * 2^x - 6 \\[3ex]
+                    As \;\;x \rightarrow -\infty, \;\; 2^x \rightarrow 0 \\[3ex]
+                    \implies \\[3ex]
+                    f(x) = 4 * 0 - 6 \\[3ex]
+                    f(x) = 0 - 6 \\[3ex]
+                    f(x) = -6 \\[3ex]
+                    HA:\;\; y = -6 \\[3ex]
+                    (d.) \\[3ex]
+                    f(x) = 4 * 2^x - 6 \\[3ex]
+                    Verify\;\;at\;\;least\;\;one\;\;point\;\;on\;\;the\;\;graph \\[3ex]
+                    when\;\;x = 0 \\[3ex]
+                    f(0) = 4 * 2^0 - 6 \\[3ex]
+                    f(0) = 4(1) - 6 \\[3ex]
+                    f(0) = 4 - 6 \\[3ex]
+                    f(0) = -2 \\[3ex]
+                    (0, -2) \;\;is\;\;a\;\;point\;\;on\;\;the\;\;graph \\[3ex]
+                    Also: \\[3ex]
+                    $
+                    Because the coefficient of $2^x$ is $4$, the function is increasing <br>
+                    With a horizontal asymptote of $-6$, the graph is: <br>
+                    <div class="w3-center">
+                        <img src="images/Answers/ExponentialLogarithmicFunctions/Number11.png" alt="Number 11">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionEFLF12')">Show/Hide Answer</button>
+                <div class="result" id="solutionEFLF12">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.) State the: <br>
+                (a.) Domain. <br>
+                (b.) Vertical Asymptote. <br>
+                (c.) End-behavior. <br>
+                of the function $g(x) = \ln(5x + 10) + 1.3$ <br>
+                (d.) Which of the following graphs best represents the graph of $g(x)$? <br>
+                <div class="w3-center">
+                    <img src="images/Questions/ExponentialLogarithmicFunctions/Number13-1.png" alt="Number 13-1"> <br>
+                    <img src="images/Questions/ExponentialLogarithmicFunctions/Number13-2.png" alt="Number 13-2">
+                </div> <br>
+                <button class="solutions" onclick="solutions('solutionEFLF13')">Show/Hide Answer</button>
+                <div class="result" id="solutionEFLF13">
+                    <br>
+                    The domain of a logarithmic function are all the values of $x$ for which the function has an output.
+                    <br>
+                    To find the domain of a logarithmic function, the argument of the function must be greater than
+                    zero. <br>
+                    To determine the vertical asymptote of a logarithmic function, set the argument to zero and solve
+                    for $x$ <br><br>
+                    $
+                    g(x) = \ln(5x + 10) + 1.3 \\[3ex]
+                    (a.) \\[3ex]
+                    \underline{Domain} \\[3ex]
+                    5x + 10 \gt 0 \\[3ex]
+                    5x \gt 0 - 10 \\[3ex]
+                    5x \gt -10 \\[3ex]
+                    x \gt -\dfrac{10}{5} \\[5ex]
+                    x \gt -2 \\[3ex]
+                    D = \{x: x \gt -2\} \\[3ex]
+                    D = (-2, \infty) \\[3ex]
+                    (b.) \\[3ex]
+                    \underline{Vertical\;\;Asymptote} \\[3ex]
+                    5x + 10 = 0 \\[3ex]
+                    5x = 0 - 10 \\[3ex]
+                    5x = -10 \\[3ex]
+                    x = -\dfrac{10}{5} \\[5ex]
+                    x = -2 \\[3ex]
+                    VA:\;\;x = -2 \\[3ex]
+                    (c.) \\[3ex]
+                    VA:\;\;x = -2 \\[3ex]
+                    As\;\;x \rightarrow -2,\;\; g(x) \rightarrow -\infty \\[3ex]
+                    As\;\;x \rightarrow \infty,\;\; g(x) \rightarrow \infty \\[3ex]
+                    $
+                    (d.) <br>
+                    With a vertical asymptote of $-2$, the graph is: <br>
+                    <div class="w3-center">
+                        <img src="images/Answers/ExponentialLogarithmicFunctions/Number13.png" alt="Number 13">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionEFLF14')">Show/Hide Answer</button>
+                <div class="result" id="solutionEFLF14">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- END PAGE CONTENT -->
+
+
+
+    <!-- Footer -->
+    <footer class="cornsilk w3-center w3-padding-24">
+        <!--
+            <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel"></a>
+            <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter"></a>
+            <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog"></a>
+            -->
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-128236011-1' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!--<p>&copy; 2018&nbsp;<a href="https://www.chukwuemekasamuel.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.</p>-->
+        <p>&copy; 2018&nbsp;Samdom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages10.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>
